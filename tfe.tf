@@ -6,6 +6,6 @@ terraform {
   }
 }
 resource "tfe_workspace" "example" {
-  name         = "mayure"
+  name         = "mayur"
   organization = "devopsmayur"
 }
