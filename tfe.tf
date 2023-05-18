@@ -6,7 +6,7 @@ terraform {
   }
 }
 resource "tfe_workspace" "test" {
-  name         = "my-workspace-namemayur"
+  name         = "mayur"
   organization = "devopsmayur"
   tag_names    = ["app"]
 }
