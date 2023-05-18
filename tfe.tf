@@ -5,7 +5,7 @@ terraform {
     }
   }
 }
-resource "tfe_workspace" "AI" {
+resource "tfe_workspace" "test" {
   name         = "my-workspace-namemayur"
   organization = "devopsmayur"
   tag_names    = ["app"]
