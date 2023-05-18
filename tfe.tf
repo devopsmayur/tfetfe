@@ -5,13 +5,8 @@ terraform {
     }
   }
 }
-resource "tfe_organization" "test-organization" {
-  name  = "devopsmayur"
-  email = "admin@company.com"
-}
-
-resource "tfe_workspace" "test" {
-  name         = "my-workspace-namemkg"
-  organization = tfe_organization.test-organization.name
-  tag_names    = ["test", "app"]
+resource "tfe_workspace" "AI" {
+  name         = "my-workspace-namemayur"
+  organization = devopsmayur
+  tag_names    = ["app"]
 }
