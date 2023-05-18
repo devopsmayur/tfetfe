@@ -8,3 +8,4 @@ terraform {
 resource "tfe_workspace" "example" {
   name         = "mayure"
   organization = "devopsmayur"
+}
