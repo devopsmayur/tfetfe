@@ -5,12 +5,13 @@ terraform {
     }
   }
 }
-resource "devopsmayur" {
-  name  = "my-org-name"
-  email = "mayur.gandhi@hashicorp.com"
+resource "tfe_organization" "test-organization" {
+  name  = "devopsmayur"
+  email = "admin@company.com"
 }
 
 resource "tfe_workspace" "test" {
-  name         = "my-workspace-mayur"
-  tag_names    = [“prod”]
+  name         = "my-workspace-namemkg"
+  organization = tfe_organization.test-organization.name
+  tag_names    = ["test", "app"]
 }
