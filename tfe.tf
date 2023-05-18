@@ -7,6 +7,6 @@ terraform {
 }
 resource "tfe_workspace" "AI" {
   name         = "my-workspace-namemayur"
-  organization = devopsmayur
+  organization = "devopsmayur"
   tag_names    = ["app"]
 }
