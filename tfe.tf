@@ -5,8 +5,6 @@ terraform {
     }
   }
 }
-resource "tfe_workspace" "test" {
-  name         = "mayur"
+resource "tfe_workspace" "example" {
+  name         = "mayure"
   organization = "devopsmayur"
-  tag_names    = ["app"]
-}
