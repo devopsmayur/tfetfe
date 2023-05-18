@@ -11,7 +11,7 @@ resource "tfe_organization" "test-organization" {
 }
 
 resource "tfe_workspace" "test" {
-  name         = “airfrance”
+  name         = "my-workspace-mayur"
   organization = tfe_organization.test-organization.name
   tag_names    = [“prod”]
 }
